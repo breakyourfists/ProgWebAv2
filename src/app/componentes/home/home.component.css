@@ -1,0 +1,9 @@
+.fakeico {
+  height: 61px;
+  width: 56px;
+  background: #aaa;
+}
+.espaco{
+  border-collapse:separate;
+  border-spacing:0 10px;
+}

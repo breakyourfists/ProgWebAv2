@@ -1,0 +1,30 @@
+[
+  {
+    "id":1,
+    "texto": "Estou com fome",
+    "autor":"Juarez",
+    "data":"2019-10-01T00:00:00",
+    "ativo":true
+  },
+  {
+    "id":2,
+    "texto": "Sou troxa pq namoro a distancia pela 2 vez.",
+    "autor":"Rodrigo",
+    "data":"2019-10-01T00:00:00",
+    "ativo":true
+  },
+  {
+    "id":3,
+    "texto": "EU AVISEI",
+    "autor":"Fernando",
+    "data":"2019-10-01T00:00:00",
+    "ativo":true
+  },
+  {
+    "id":4,
+    "texto": "Estou carente",
+    "autor":"Emocionado",
+    "data":"2019-10-01T00:00:00",
+    "ativo":true
+  }
+]

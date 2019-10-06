@@ -1,0 +1,37 @@
+<div class="container">
+<section class="my-5" >
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col-lg-6">
+            <!-- Newsfeed -->
+            <div class="mdb-feed">
+                <div *ngFor="let tweet of getTweetsAtivos();  let i = index" class="col-12">
+                    <!-- Label -->
+                    <div class="label">
+                        <img src="https://randomuser.me/api/portraits/men/{{i+1}}.jpg" class="rounded-circle avatar">
+                        {{tweet.autor}}
+                    </div>
+                    <!-- Excerpt -->
+                    <div class="excerpt">
+                        <!-- Brief -->
+                        <div >
+                            {{tweet.texto}}
+                            <div class="date"> {{tweet.data | date}}</div>
+                        </div>
+                        <!-- Feed footer -->
+                        <div class="feed-footer">                                                     
+                        </div>
+                        <!-- Feed footer -->
+                    </div>
+                    <!-- Excerpt -->
+                </div>
+                <!-- First news -->
+            </div>
+            <!-- Newsfeed -->
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+</section>
+</div>
+<!-- Section: Social newsfeed v.2 -->
