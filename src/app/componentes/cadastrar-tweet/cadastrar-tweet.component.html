@@ -1,37 +1,36 @@
 <div class="modal-body row" style="background-color: darkslateblue">
-    <div class="col-md-3">
-
-    </div>
-    <div class="col-md-6" style="background-color: lightskyblue">
-        <h2 layout-align="center center">Cadastro de tweet</h2>
-        <form>
-
-            <div class="form-group">
-                <label>Usuario</label>
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                    <select id="exampleInputDateYear" class="form-control mr-1">
-                        <option *ngFor="let usuario of usuarios;" value="{{usuario.nome}}"> {{usuario.nome}}</option>
-                    </select>
+        <div class="col-md-3">
+    
+        </div>
+        <div class="col-md-6" style="background-color: lightskyblue">
+            <h2 layout-align="center center">Cadastro de tweet</h2>
+            <form >
+                <div class="form-group">
+                    
+                    <label>Usuario</label>
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <select class="form-control mr-1">
+                            <option *ngFor="let usuario of usuarios;" value="{{usuario.nome}}">{{usuario.nome}}</option>
+                        </select>
+                    </div>
+    
+                    <label>Imagem</label>
+                    <input type="text" class="form-control" placeholder="Link para a imagem" required>
+    
+                    <label>Descrição</label>
+                    <textarea class="form-control" rows="2" placeholder="Digite seu tweet aqui..." required></textarea>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkAtivo" value="isAtivo">
+                        <label class="form-check-label" for="checkAtivo">Ativo</label>
+                    </div>
                 </div>
-
-                <label for="exampleInputName">Imagem</label>
-                <input type="text" class="form-control" placeholder="Link para a imagem" required>
-
-                <label for="exampleTextareaBio">Descrição</label>
-                <textarea class="form-control" id="exampleTextArea" rows="2" placeholder="Digite seu tweet aqui..."
-                    required></textarea>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="checkAtivo" value="isAtivo">
-                    <label class="form-check-label" for="checkAtivo">Ativo</label>
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Postar</button>
-            <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
-        </form>
+    
+                <button type="submit" (click)="onSubmit()" class="btn btn-primary">Postar</button>
+                <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+            </form>
+        </div>
+        <div class="col-md-3">
+    
+        </div>
     </div>
-    <div class="col-md-3">
-
-    </div>
-</div>
