@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from 'src/app/services/usuarios.service';
+import { FormGroup, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastrar-tweet',
@@ -7,6 +8,11 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
   styleUrls: ['./cadastrar-tweet.component.css']
 })
 export class CadastrarTweetComponent implements OnInit {
+
+  form = new FormGroup({
+    imagem: new FormControl('', Validators.required),
+    descricao: new FormControl('', Validators.required)
+  });
 
   constructor(private usuariosService: UsuariosService) { }
   usuarios = [];
@@ -17,6 +23,7 @@ export class CadastrarTweetComponent implements OnInit {
 
   onSubmit(){
     window.alert("Tweet enviado.");
+    this.form.reset();
   }
 
 }
